@@ -80,6 +80,7 @@ func AccessLog(log *slog.Logger) gin.HandlerFunc {
 			"client_ip", c.ClientIP(),
 			"op", c.GetString("op"),
 			"policy", c.GetString("policy"),
+			"node", c.GetString("node"),
 			"reject_reason", c.GetString("reject_reason"),
 		)
 	}
