@@ -1,0 +1,110 @@
+{
+  "direct": {
+    "write": {
+      "requests": 100,
+      "errors": 0,
+      "error_rate": 0,
+      "throughput_rps": 2891.62,
+      "mean_ms": 5.41,
+      "p50_ms": 5.335,
+      "p95_ms": 7.217,
+      "p99_ms": 7.93,
+      "nodes": {
+        "primary": 100
+      }
+    },
+    "read": {
+      "requests": 100,
+      "errors": 0,
+      "error_rate": 0,
+      "throughput_rps": 6417.97,
+      "mean_ms": 2.37,
+      "p50_ms": 2.155,
+      "p95_ms": 4.093,
+      "p99_ms": 5.285,
+      "nodes": {
+        "primary": 100
+      }
+    },
+    "read_your_write": {
+      "checked": 200,
+      "stale": 0,
+      "stale_rate": 0,
+      "stale_by_node": {}
+    }
+  },
+  "latency": {
+    "write": {
+      "requests": 100,
+      "errors": 0,
+      "error_rate": 0,
+      "throughput_rps": 3018.09,
+      "mean_ms": 5.21,
+      "p50_ms": 5.121,
+      "p95_ms": 6.397,
+      "p99_ms": 6.645,
+      "nodes": {
+        "primary": 100
+      }
+    },
+    "read": {
+      "requests": 100,
+      "errors": 0,
+      "error_rate": 0,
+      "throughput_rps": 5859.19,
+      "mean_ms": 2.63,
+      "p50_ms": 2.358,
+      "p95_ms": 3.891,
+      "p99_ms": 5.391,
+      "nodes": {
+        "replica1": 100
+      }
+    },
+    "read_your_write": {
+      "checked": 200,
+      "stale": 200,
+      "stale_rate": 1,
+      "stale_by_node": {
+        "replica1": 200
+      }
+    }
+  },
+  "random": {
+    "write": {
+      "requests": 100,
+      "errors": 0,
+      "error_rate": 0,
+      "throughput_rps": 2780.2,
+      "mean_ms": 5.68,
+      "p50_ms": 5.924,
+      "p95_ms": 6.93,
+      "p99_ms": 7.904,
+      "nodes": {
+        "primary": 100
+      }
+    },
+    "read": {
+      "requests": 100,
+      "errors": 0,
+      "error_rate": 0,
+      "throughput_rps": 4150.76,
+      "mean_ms": 3.4,
+      "p50_ms": 1.589,
+      "p95_ms": 20.229,
+      "p99_ms": 23.828,
+      "nodes": {
+        "replica1": 59,
+        "replica2": 41
+      }
+    },
+    "read_your_write": {
+      "checked": 200,
+      "stale": 200,
+      "stale_rate": 1,
+      "stale_by_node": {
+        "replica1": 114,
+        "replica2": 86
+      }
+    }
+  }
+}
